@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* Font family */
+            background-color: #f4f4f4;
+            /* Background color */
+            margin: 0;
+            /* Remove default margin */
+            padding: 20px;
+            /* Padding around the content */
+        }
+
+        h1 {
+            text-align: center;
+            /* Center the heading */
+            color: #333;
+            /* Text color */
+        }
+
+        .container {
+            max-width: 800px;
+            /* Maximum width */
+            margin: auto;
+            /* Center the container */
+            background: #fff;
+            /* White background for the container */
+            padding: 20px;
+            /* Padding inside the container */
+            border-radius: 5px;
+            /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Shadow effect */
+        }
+
+        .box {
+            background-color: #e7f3fe;
+            /* Light blue background */
+            border: 1px solid #b8daff;
+            /* Light blue border */
+            padding: 15px;
+            /* Inner spacing */
+            margin: 10px 0;
+            /* Space above and below each box */
+            border-radius: 3px;
+            /* Slightly rounded corners */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            /* Shadow for boxes */
+            transition: background-color 0.3s;
+            /* Smooth transition for hover effect */
+        }
+
+        .box:hover {
+            background-color: #d0e9ff;
+            /* Change background color on hover */
+        }
+
+        .box:nth-child(odd) {
+            background-color: #e0f7fa;
+            /* Different background for odd boxes */
+        }
+
+        .box:focus {
+            outline: 2px solid #4a90e2;
+            /* Outline for focused boxes */
+        }
+
+        button {
+            padding: 10px 15px;
+            /* Padding for button */
+            margin: 10px 0;
+            /* Space above and below button */
+            background-color: #4a90e2;
+            /* Button background color */
+            color: white;
+            /* Button text color */
+            border: none;
+            /* Remove border */
+            border-radius: 5px;
+            /* Rounded corners */
+            cursor: pointer;
+            /* Pointer cursor on hover */
+            transition: background-color 0.3s;
+            /* Smooth transition for hover effect */
+        }
+
+        button:hover {
+            background-color: #357ab8;
+            /* Darker color on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Psuedo Class Project</h1>
+        <h2>Properties of Psuedo classes.</h2>
+
+        <div class="box" tabindex="0"> <!-- tabindex for focus effect -->
+            <h2>Box 1</h2>
+            <p>This box changes color when hovered over.</p>
+        </div>
+
+        <div class="box" tabindex="0"> <!-- tabindex for focus effect -->
+            <h2>Box 2</h2>
+            <p>This box is styled differently because it's odd.</p>
+        </div>
+
+        <div class="box" tabindex="0"> <!-- tabindex for focus effect -->
+            <h2>Box 3</h2>
+            <p>Focus on this box to see the outline effect.</p>
+        </div>
+
+        <button>Click Me</button>
+    </div>
+
+</body>
+
+</html>
